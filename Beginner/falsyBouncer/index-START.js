@@ -7,7 +7,19 @@ E.g  falsyBouncer([1, 0, null, '', 5]) // should return [1,5]
 
 
 function falsyBouncer(array) {
-    // Code goes here
+    // Using a for loop
+        // let result = []
+        // //Loop through with each array value
+        // for(value of array){
+        //     //Push into result if truthy
+        //     if(value) result.push(value)
+        // }
+        // return result
+
+    // Using filter
+    return array.filter(x=> Boolean(x))
+
+
 }
 
 
